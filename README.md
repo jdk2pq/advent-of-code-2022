@@ -1,4 +1,4 @@
-# Advent of Code 2021
+# Advent of Code 2022
 
 Advent of Code Template using Node TS for Current Year.
 
@@ -6,7 +6,7 @@ Forked from [johnbeech's repo](https://github.com/johnbeech/advent-of-code-nodej
 
 ## Solutions
 
-[http://jakekenneally.com/advent-of-code-2021/solutions/](http://jakekenneally.com/advent-of-code-2021/solutions/)
+[http://jakekenneally.com/advent-of-code-2022/solutions/](http://jakekenneally.com/advent-of-code-2022/solutions/)
 
 ## Setup
 

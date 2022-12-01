@@ -1,8 +1,8 @@
 {
-  "name": "advent-of-code-2021",
-  "logName": "Advent of Code 2021",
+  "name": "advent-of-code-2022",
+  "logName": "Advent of Code 2022",
   "version": "1.0.0",
-  "description": "Advent of Code 2021 using Node TS for Current Year.",
+  "description": "Advent of Code 2022 using Node TS for Current Year.",
   "main": "run.ts",
   "scripts": {
     "prettier": "prettier --write .",
