@@ -1,6 +1,5 @@
 import { read } from 'promise-path'
 import { arrToNumberArr, reportGenerator, sortNumbers } from '../../util'
-import cloneDeep from 'lodash/cloneDeep'
 
 const report = reportGenerator(__filename)
 
@@ -35,13 +34,12 @@ async function solveForFirstStar(
   const inputAsArrayToArrays = [...originalNums]
   originalNums.forEach((num) => {
     const index = inputAsArrayToArrays.indexOf(num)
-    const spliceIndex = (index + num[0]) % inputAsArrayToArrays.length
     inputAsArrayToArrays.splice(index, 1);
-    // if i put spliceIndex here instead of the right hand side of the variable,
-    // this won't work. maybe i'm dumb and it's just late, but i'm confused...
-    inputAsArrayToArrays.splice((index + num[0]) % inputAsArrayToArrays.length, 0, num);
+
+    const spliceIndex = (index + num[0]) % inputAsArrayToArrays.length
+    inputAsArrayToArrays.splice(spliceIndex, 0, num);
     if (debug) {
-      console.log({ index, spliceIndex, inputAsArrayToArrays, alternativeSpliceIndex: (index + num[0]) % inputAsArrayToArrays.length })
+      console.log({ index, spliceIndex, inputAsArrayToArrays })
     }
   });
   if (debug) {
